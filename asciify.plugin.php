@@ -10,14 +10,6 @@
 class asciify extends Plugin
 {
 	/**
-	 * Add update beacon support
-	 **/
-	public function action_update_check()
-	{
-	 	Update::add( $this->info->name, $this->info->guid, $this->info->version );
-	}
-
-	/**
 	 * Thanks to bcse for the from and to.
 	 **/
 	private function _asciize( $string )
